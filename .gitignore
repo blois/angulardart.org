@@ -1,6 +1,6 @@
 .DS_Store
 .idea
 .project
-.pyc
+**/.pyc
 packages
 **/.DS_Store

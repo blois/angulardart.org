@@ -23,7 +23,7 @@ class BaseHandler(webapp2.RequestHandler):
       template = jinja_environment.get_template(filename)
       self.response.out.write(template.render(template_values))
     except jinja2.TemplateNotFound:
-      self.response.out.write('cant find it, man')
+      self.response.out.write('404')
 
 class Home(BaseHandler):
   def get(self):
