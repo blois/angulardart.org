@@ -1,0 +1,55 @@
+    {% extends "layouts/main.html" %}
+
+    {% block jumbotron %}
+      {% include "partials/jumbotron.html" %}
+    {% endblock %}
+
+    {% block content %}
+
+    <div role="main" class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-4 primary" id="why-angulardart">
+          <h2>Why AngularDart?</h2>
+          <p>AngularDart brings the proven Angular philosophy of testable, succinct web development to Dart.</p>
+        </div>
+        <div class="col-md-4 col-sm-4 primary" id="angularjs-plus-dart">
+          <h2>AngularJS + Dart</h2>
+          <p>Designed for Dart: use classes, annotations, and more. Build apps that scale.</p>
+        </div>
+        <div class="col-md-4 col-sm-4 primary" id="future-ready">
+          <h2>Future-ready</h2>
+          <p>AngularDart embraces modern web platform features, starting with Shadow DOM and Web Components.</p>
+        </div>
+      </div><!-- /.row -->
+
+      <hr class="shield" />
+
+      <div class="row">
+        <div class="col-md-12" id="news">
+          <h3>News & Updates</h3>
+          <ul>
+            <li class="stackoverflow">
+              <time datetime="2014-01-26">30 Jan 2014</time>
+              <p><strong>Escaping characters ever necessary in AngularDart?</strong> Does one ever have to worry about character escaping in AngularDart? I think that mustache rendering is always safe; e.g... <a href="http://stackoverflow.com/questions/21472281/escaping-characters-ever-necessary-in-angulardart">more »</a></p>
+            </li>
+            <li class="twitter">
+              <time datetime="2014-01-26">29 Jan 2014</time>
+              <p><a href="https://twitter.com/jbdeboer">@jbdeboer</a> The latest AngularDart beta release 0.9.5 out and up on pub <a href="http://blog.angulardart.org/2014/01/angulardart-release-v095.html">http://blog.angulardart.org/2014/01/a...</a> <a href="https://twitter.com/jbdeboer/status/428650000491372544">more »</a></p></p>
+            </li>
+            <li class="release">
+              <time datetime="2014-01-26">27 Jan 2014</time>
+              <p><strong>v0.9.5 badger-magic (2014-01-27)</strong> Bug Fixes. Directive: remove publishAs from NgDirective to avoi... <a href="https://github.com/angular/angular.dart/blob/master/CHANGELOG.md">more »</a></p>
+            </li>
+            <li class="google_plus">
+              <time datetime="2014-01-26">27 Jan 2014</time>
+              <p><a href="https://plus.google.com/u/0/+MatthewButler/posts">Matthew Butler:</a> The <a href="https://plus.google.com/u/0/114045997737047039685/posts">+dartlangfr</a> team have put together an awesome AngularDart Codelab. This codelab is similar to the <a href="https://plus.google.com/u/0/+dartlang/posts">+Dart</a> codelab: Darrrt. Bu... <a href="https://plus.google.com/u/0/+MatthewButler/posts/X3cYbs3CDrn">more »</a></p>
+            </li>
+            <li class="rss">
+              <time datetime="2014-01-26">5 Nov 2014</time>
+              <p><strong>Introducing AngularDart v0.9.0</strong> Today we are happy to share with you the beta release of the AngularDart framework, our port of Angular to Dart. AngularDart is...<a href="http://blog.angulardart.org/2013/11/today-we-are-happy-to-share-with-you.html">more »</a></p>
+            </li>
+          </ul>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /main.container -->
+    {% endblock content %}

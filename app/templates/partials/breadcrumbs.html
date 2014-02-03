@@ -1,0 +1,14 @@
+      {% macro render(values) -%}
+
+      <div class="breadcrumbs">
+        <div class="container">
+          <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            {% for label, url in values.iteritems() %}
+              <li {% if loop.last %}class='active'{% endif %}><a href="{{ url }}">{{ label }}</a></li>
+            {% endfor %}
+          </ol><!-- /.breadcrumb -->
+        </div><!-- /.container -->
+      </div><!-- /.breadcrumbs -->
+
+      {%- endmacro %}

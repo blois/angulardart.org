@@ -6,47 +6,32 @@ threadsafe: yes
 
 default_expiration: "10m"
 
+libraries:
+  - name: webapp2
+    version: latest
+
+  - name: jinja2
+    version: latest
+
+  - name: markupsafe
+    version: latest
+
 handlers:
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: /
-  static_files: app/index.html
-  upload: app/index\.html
-  mime_type: text/html; charset=utf-8
+- url: /css
+  static_dir: app/static/css
 
-- url: (/.*\.css)
-  static_files: app\1
-  upload: app/.*\.css
-  mime_type: text/css; charset=utf-8
+- url: /dart
+  static_dir: app/static/dart
 
-- url: (/.*\.html)
-  static_files: app\1
-  upload: app/.*\.html
-  mime_type: text/html; charset=utf-8
+- url: /js
+  static_dir: app/static/js
 
-- url: (/.*\.json)
-  static_files: app\1
-  upload: app/.*\.json
-  mime_type: application/json; charset=utf-8
+- url: /img
+  static_dir: app/static/img
 
-- url: (/.*\.js)
-  static_files: app\1
-  upload: app/.*\.js
-  mime_type: text/javascript; charset=utf-8
-
-- url: (/.*\.png)
-  static_files: app\1
-  upload: app/.*\.png
-  mime_type: image/png
-
-- url: (/.*)
-  static_files: app/index.html
-  upload: app/index\.html
-  mime_type: text/html; charset=utf-8
-
-- url: /tutorial(/.*\.html)
-  static_files: app/tutorial\1
-  upload: app/tutorial/.*\.html
-  mime_type: text/html; charset=utf-8
+- url: /.*
+  script: routes.app
