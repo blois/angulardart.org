@@ -47,4 +47,4 @@ class TutorialHome(BaseHandler):
 
 class TutorialSub(BaseHandler):
   def get(self, page):
-    self.render_template('demo/' + page + '.html', '')
+    self.render_template('tutorial/' + page + '.html', '')
